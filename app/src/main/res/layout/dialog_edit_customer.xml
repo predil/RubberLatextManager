@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Customer"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/edtCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name" />
+
+    <EditText
+        android:id="@+id/edtCustomerContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact (optional)"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnUpdateCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+    <Button
+        android:id="@+id/btnDeleteCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

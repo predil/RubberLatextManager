@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Sale"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal" />
+
+        <Spinner
+            android:id="@+id/spinnerCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/edtQuantityKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity Sold (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtPricePerKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selling Price per kg (LKR)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtDateOfSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Sale (yyyy-MM-dd)" />
+
+        <EditText
+            android:id="@+id/edtProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profit (optional)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnSaveSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </LinearLayout>
+</ScrollView>

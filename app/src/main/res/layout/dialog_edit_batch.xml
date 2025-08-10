@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Batch"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (yyyy-MM-dd)" />
+
+        <EditText
+            android:id="@+id/edtLatexUsed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Latex Used (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtGlueProduced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Glue Produced (kg)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cost (LKR)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edtNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes (optional)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnUpdateBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+        <Button
+            android:id="@+id/btnDeleteBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
